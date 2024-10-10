@@ -1,4 +1,3 @@
-import React from 'react';
 import './Spinner.css'; // файл стилей для спиннера
 
 const Spinner = () => {

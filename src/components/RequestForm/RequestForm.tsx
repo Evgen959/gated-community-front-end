@@ -20,7 +20,6 @@ function RequestForm() {
   const [services, setServices] = useState<Service[]>([]);
   const [addresses, setAddresses] = useState<Address[]>([]);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [userId, setUserId] = useState<string>("1");
   const [userValid, setUserValid] = useState<boolean | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [formData, setFormData] = useState({

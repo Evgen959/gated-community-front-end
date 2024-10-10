@@ -16,9 +16,9 @@ function ProfilePage() {
   const [userData, setUserData] = useState<UserData | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [error, setError] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [userName, setUserName] = useState<string | null>(
+  const [userName ] = useState<string | null>(
     localStorage.getItem("userName")
   ); // Получаем userName
   const navigate = useNavigate(); // Для перенаправления пользователя
