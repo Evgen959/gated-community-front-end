@@ -1,4 +1,4 @@
-import './Spinner.css'; // файл стилей для спиннера
+import './Spinner.css';
 
 const Spinner = () => {
   return (
