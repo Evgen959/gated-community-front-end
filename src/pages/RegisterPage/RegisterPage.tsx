@@ -20,10 +20,9 @@ function RegisterPage() {
       [name]: value,
     }));
   };
-console.log("Test")
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     try {
       const res = await fetch("/api/auth/register", {
         method: "POST",
@@ -32,11 +31,11 @@ console.log("Test")
         },
         body: JSON.stringify(formData),
       });
-      
+
       if (!res.ok) {
         throw new Error("Ошибка при регистрации.");
       }
-      
+
       setSuccess(true);
       setFormData({
         userName: "",
