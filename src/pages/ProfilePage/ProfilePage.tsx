@@ -22,7 +22,7 @@ interface UserData {
 }
 
 function ProfilePage() {
-  console.log("test")
+  
   const role = getUserRole();
   const [userData, setUserData] = useState<UserData | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -38,6 +38,7 @@ function ProfilePage() {
         throw new Error("Токен или имя пользователя отсутствуют");
       }
 
+      console.log("test")
       const res = await fetch(`/api/users/me`, {
         method: "GET",
         headers: {
