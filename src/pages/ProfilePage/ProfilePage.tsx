@@ -38,7 +38,7 @@ function ProfilePage() {
         throw new Error("Токен или имя пользователя отсутствуют");
       }
 
-      console.log("test")
+      console.log("test1")
       const res = await fetch("/api/users/me", {
         method: "GET",
         headers: {
@@ -47,6 +47,7 @@ function ProfilePage() {
         },
       });
 
+      console.log("test2")
       if (!res.ok) {
         throw new Error(`Ошибка: ${res.status}`);
       }
