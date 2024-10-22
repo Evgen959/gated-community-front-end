@@ -40,10 +40,10 @@ function ProfilePage() {
 
       console.log("test1");
       console.log(token);
-      const res = await fetch("/api/users/me", {
+      const res = await fetch("/api/users", {
         method: "GET",
         headers: {
-          // "Content-Type": "application/json",
+          "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
         },
       });
