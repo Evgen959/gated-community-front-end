@@ -39,7 +39,7 @@ function ProfilePage() {
       }
 
       console.log("test")
-      const res = await fetch(`/api/users/me`, {
+      const res = await fetch("/api/users/me", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
