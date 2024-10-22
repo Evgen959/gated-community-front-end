@@ -11,6 +11,7 @@ const LoginPage: React.FC = () => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
+      console.log("test")
       const res = await fetch("/api/auth/login", {
         method: "POST",
         headers: {
@@ -20,7 +21,7 @@ const LoginPage: React.FC = () => {
       });
 
       if (!res.ok) {
-        console.log("test")
+        
         throw new Error("Failed to login");
       }
 
