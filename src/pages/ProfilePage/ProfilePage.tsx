@@ -40,7 +40,7 @@ function ProfilePage() {
 
       console.log("test1");
       console.log(token);
-      const res = await fetch("/api/users", {
+      const res = await fetch("/api/users/me", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
