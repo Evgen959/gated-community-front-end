@@ -43,7 +43,7 @@ function ProfilePage() {
       const res = await fetch("/api/users/me", {
         method: "GET",
         headers: {
-          "Content-Type": "application/json",
+          // "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
         },
       });
