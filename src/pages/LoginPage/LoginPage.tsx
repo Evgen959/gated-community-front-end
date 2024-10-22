@@ -24,8 +24,7 @@ const LoginPage: React.FC = () => {
         throw new Error("Failed to login");
       }
 
-      const data = await res.json();   
-      console.log(data) 
+      const data = await res.json();
       localStorage.setItem("accessToken", data.accessToken); // Сохраняем accessToken в localStorage
       localStorage.setItem("refreshToken", data.refreshToken); // Можно сохранить и refreshToken для обновления токена
       localStorage.setItem("userName", username); // Сохраняем userName в localStorage
