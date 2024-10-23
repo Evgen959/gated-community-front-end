@@ -38,7 +38,7 @@ function ProfilePage() {
         throw new Error("Токен или имя пользователя отсутствуют");
       }
 
-      const res = await fetch("/api/users/me", {
+      const res = await fetch("/api/auth/me", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
