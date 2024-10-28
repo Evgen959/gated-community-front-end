@@ -1,12 +1,11 @@
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import GatedCommunity from './pages/GatedCommunity';
 
 function App() {
-  
   return (
-    <HashRouter>
+    <BrowserRouter>
       <GatedCommunity />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

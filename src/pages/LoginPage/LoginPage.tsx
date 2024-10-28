@@ -20,7 +20,6 @@ const LoginPage: React.FC = () => {
       });
 
       if (!res.ok) {
-        
         throw new Error("Failed to login");
       }
 
