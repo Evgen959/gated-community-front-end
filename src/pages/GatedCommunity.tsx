@@ -9,11 +9,12 @@ import AddressesPage from './AddressesPage/AddressesPage';
 import AdminRoute from '../components/AdminRoute/AdminRoute';
 import './GatedCommunity.css'; // Подключаем стили
 import getUserRole from '../components/getUserRole/getUserRole';
+import { useContext } from 'react';
 
 
 function GatedCommunity() {
     const isAdmin = getUserRole() === 'admin';
-
+    // const {user} = useContext(UserContext)
     return (
         <div className="gated-community">
             <nav className="navigation">
@@ -21,8 +22,8 @@ function GatedCommunity() {
                 <Link to="/profile" className="nav-link">Профиль</Link>
                 <Link to="/requests" className="nav-link">Requests</Link>                              
                 {/* Показывать ссылку "Addresses services" только если пользователь администратор */}
-                {isAdmin && <Link to="/Adreses" className="nav-link">Addresses</Link>} 
-                {isAdmin && <Link to="/services" className="nav-link">Service</Link>} 
+                {localStorage.getItem("userRoleLocal")==="admin" && <Link to="/Adreses" className="nav-link">Addresses</Link>} 
+                {localStorage.getItem("userRoleLocal")==="admin" && <Link to="/services" className="nav-link">Service</Link>} 
             </nav>
             <div className="content">
                 <Routes>
