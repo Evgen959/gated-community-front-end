@@ -5,7 +5,7 @@ function HomePage() {
     
     <div className="home-page">
       <h1>Welcome to GatedCommunity</h1>
-      <p>We could have been the first community with Love.</p>
+      <p>We could have been the first community with love.</p>
     </div>
   );
 }
